@@ -1,6 +1,9 @@
 # private
 resume.ipynb
 resumed.ipynb
+eduardo-pa005-rsa.pem
+rootkey.csv
+metabase/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
