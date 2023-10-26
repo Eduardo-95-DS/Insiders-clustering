@@ -60,10 +60,12 @@ This filtering only removed 0.01% of the total dataset, which contained 541909 r
 ## Hypothesis 1:
 ### Insiders have a purchase volume (products) above 10% of total purchases
 **True**: Insider's product purchase volume is 38.28% of total purchases
+![download (1)](https://github.com/Soturno95/Insiders-clustering/assets/95311171/dc2e8d69-fe96-4231-a076-9f34147b9acf)
 
 ## Hypothesis 2:  
 ### Insiders have an average number of returns below the average for the total customer base
 **False**: In average insiders returns are 7x higher
+![download (2)](https://github.com/Soturno95/Insiders-clustering/assets/95311171/5eb1ee1c-0476-42ed-83ea-e749770c39bb)
 
 ## Hypothesis 3:
 ### The GMV of insiders is concentrated in the 3rd quartile
