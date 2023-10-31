@@ -74,4 +74,8 @@ This filtering only removed 0.01% of the total dataset, which contained 541909 r
 
 # **5. Machine learning model applied**
 
-The algorithms used were Random forest regressor, K-means, Gaussian mixture model and Hierarchical Clustering.
+The algorithms used were Random forest regressor (RFR), K-means, Gaussian mixture model (GMM) and Hierarchical clustering (HC). Random forest regressor was used to create a embedding space, in which the dataset was more organized in a higher dimensionality space, allowing the clusterization algorithms (k-means, gmm and hc) to perform better.
+
+On top of that, dimensionality reductor algorithms such as UMAP, t-SNE and PCA were used after the RFR (in the embedded space) and before the clusterization algorithms, in order to further improve performance.
+
+Silhouette method/score and visualization were the metrics used.
