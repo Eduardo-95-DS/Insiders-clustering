@@ -104,9 +104,9 @@ HC - 0.645021
 ![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)     
 
 
-All three algorithms had a very similar silhouette score; looking at the silhouette visualizations (per cluster), the HC algorithm had a slight higher score in the Insiders cluster (the last silhouette from top top bottom), therefore it was the chosen algorithm.   
+All three algorithms had a very similar silhouette score; looking at the silhouette visualizations below (per cluster), the HC algorithm had a slight higher score in the Insiders cluster (the last silhouette from top top bottom), therefore it was the chosen algorithm.   
 
-## - K-means 
+## - K-means
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/6f340531-4e65-42e0-8688-b75ad58e1702)
 
 ## - GMM 
