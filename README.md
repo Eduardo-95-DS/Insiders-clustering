@@ -86,25 +86,31 @@ The K (n° of clusters) chosen was 10, which was a balanced number between a dec
 Of the dimensonality reductors, UMAP was the most efficient, thus the only shown below.    
 
 Silhouette scores with only data preparation (standardization of features with Min Max Scaler):    
-K-means - 0.421276   
-GMM - -0.181430   
-HC - 0.374576   
+**K-means -** 0.421276   
+**GMM -** -0.181430   
+**HC -** 0.374576   
 ![Untitled](https://github.com/Soturno95/Insiders-clustering/assets/95311171/04ddfa48-82c8-4d9f-830f-16c4924ce848)   
 
 Silhouette scores with data preparation (standardization of features with Min Max Scaler) and UMAP:   
-K-means - 0.513254   
-GMM - 0.465497   
-HC - 0.474117   
+**K-means -** 0.513254   
+**GMM -** 0.465497   
+**HC -** 0.474117   
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/ea93be1b-581e-4007-824b-67e2e2f43fed)   
 
 Silhouette scores with the RFR embedding space and UMAP with tuned parameters:      
-K-means - 0.645201   
-GMM - 0.645221   
-HC - 0.645021  
+**K-means -** 0.645201   
+**GMM -** 0.645221   
+HC - 0.645021    
 ![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)     
 
+
+All three algorithms had a very similar silhouette score; looking at the silhouette visualizations (per cluster), the HC algorithm had a slight higher score in the Insiders cluster (the last silhouette from top top bottom), therefore it was the chosen algorithm.   
+
+## - K-means 
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/6f340531-4e65-42e0-8688-b75ad58e1702)
 
+## - GMM 
 ![Untitled22](https://github.com/Soturno95/Insiders-clustering/assets/95311171/d0709bec-ca93-46a2-891e-9ad09f978bfd)
 
+## - HC 
 ![Untitled3](https://github.com/Soturno95/Insiders-clustering/assets/95311171/47dc157f-fe53-4b00-aa03-e7b094a3a10a)
