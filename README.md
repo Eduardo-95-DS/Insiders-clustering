@@ -76,32 +76,30 @@ This filtering only removed 0.01% of the total dataset, which contained 541909 r
 
 The algorithms used were Random forest regressor (RFR), K-means, Gaussian mixture model (GMM) and Hierarchical clustering (HC). Random forest regressor was used to create a embedding space, in which the dataset was more organized in a higher dimensionality space, allowing the clusterization algorithms (k-means, gmm and hc) to perform better.
 
-On top of that, dimensionality reductor algorithms such as UMAP, t-SNE and PCA were used after the RFR (in the embedded space) and before the clusterization algorithms, in order to further improve performance.
+On top of that, dimensionality reductor algorithms such as UMAP, t-SNE and PCA were used after data preparation and after the RFR (in the embedding space) (before the  algorithms) in order to further improve performance.
 
 Silhouette method/score and visualization were the metrics used.
 
 # **6. Machine learning model performance**
 
-The K (n° of clusters) chosen was 10, which was a balanced number between a decent silhouette score and a manageable n° of clusters for the business/marketing teams.
+The K (n° of clusters) chosen was 10, which was a balanced number between a decent silhouette score and a manageable n° of clusters for the business/marketing teams.    
+Of the dimensonality reductors, UMAP was the most efficient, thus the only shown below.    
 
-Silhouette scores with only data preparation (standardization of features with Min Max Scaler):
-K-means - 0.645201
-GMM - 0.645221
-HC - 0.645021
-
+Silhouette scores with only data preparation (standardization of features with Min Max Scaler):    
+K-means - 0.421276   
+GMM - -0.181430   
+HC - 0.374576   
 ![Untitled](https://github.com/Soturno95/Insiders-clustering/assets/95311171/04ddfa48-82c8-4d9f-830f-16c4924ce848)   
 
-Silhouette scores with only data preparation (standardization of features with Min Max Scaler):
-K-means - 0.645201
-GMM - 0.645221
-HC - 0.645021
-
+Silhouette scores with data preparation (standardization of features with Min Max Scaler) and UMAP:   
+K-means - 0.513254   
+GMM - 0.465497   
+HC - 0.474117   
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/ea93be1b-581e-4007-824b-67e2e2f43fed)   
 
-Silhouette scores with only data preparation (standardization of features with Min Max Scaler):
-K-means - 0.645201
-GMM - 0.645221
-HC - 0.645021
-
+Silhouette scores with the RFR embedding space and UMAP with tuned parameters:      
+K-means - 0.645201   
+GMM - 0.645221   
+HC - 0.645021  
 ![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)   
 
