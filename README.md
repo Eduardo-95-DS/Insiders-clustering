@@ -101,5 +101,10 @@ Silhouette scores with the RFR embedding space and UMAP with tuned parameters:
 K-means - 0.645201   
 GMM - 0.645221   
 HC - 0.645021  
-![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)   
+![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)     
 
+![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/6f340531-4e65-42e0-8688-b75ad58e1702)
+
+![Untitled22](https://github.com/Soturno95/Insiders-clustering/assets/95311171/d0709bec-ca93-46a2-891e-9ad09f978bfd)
+
+![Untitled3](https://github.com/Soturno95/Insiders-clustering/assets/95311171/47dc157f-fe53-4b00-aa03-e7b094a3a10a)
