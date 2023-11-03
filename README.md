@@ -125,7 +125,7 @@ For the full list of Insiders, see the insiders.csv or the dashboard.
 
 - How many customers will be part of the group?
 
-550
+550 (9.66% of the total)
 
 - What are the main characteristics of these customers?
  
@@ -139,7 +139,8 @@ Average purchase frequency : 0.21/day
 56.39%
 
 - What is this group's billing expectation for the coming months?
-For this questions
+
+For this question another machine learning project implementing time series algorithm it's gonna be needed. 
 
 - What are the conditions for a person to be eligible for Insiders?
 
