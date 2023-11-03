@@ -100,7 +100,7 @@ Silhouette scores with data preparation (standardization of features with Min Ma
 Silhouette scores with the RFR embedding space and UMAP with tuned parameters:      
 **K-means -** 0.645201   
 **GMM -** 0.645221   
-HC - 0.645021    
+**HC -** 0.645021    
 ![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)     
 
 
@@ -119,28 +119,29 @@ All three algorithms had a very similar silhouette score; looking at the silhoue
 
 ## **7.1 Business questions**
 
-- Who are eligible to participate in the Insiders program?
+- Who are eligible to participate in the Insiders program?   
 
-For the full list of Insiders, see the insiders.csv or the dashboard.
+For the full list of Insiders, see the insiders.csv or the dashboard.    
 
-- How many customers will be part of the group?
+- How many customers will be part of the group?    
 
-550 (9.66% of the total)
+550 (9.66% of the total)    
 
-- What are the main characteristics of these customers?
+- What are the main characteristics of these customers?    
  
-Number of customers : 550, 9.66 % of all the customers
-Average revenue : $ 10,280.14
-Average recency : 44
-Average number of products purchased : 367
-Average purchase frequency : 0.21/day
+  Number of customers : 550, 9.66 % of all the customers    
+  Average revenue : $ 10,280.14      
+  Average recency : 44    
+  Average number of products purchased : 367   
+  Average purchase frequency : 0.21/day     
 
 - What is the percentage of revenue contribution from Insiders?
+
 56.39%
 
-- What is this group's billing expectation for the coming months?
+- What is this group's billing expectation for the coming months?   
 
-For this question another machine learning project implementing time series algorithm it's gonna be needed. 
+For this question another machine learning project implementing time series algorithm it's gonna be needed.     
 
 - What are the conditions for a person to be eligible for Insiders?
 
