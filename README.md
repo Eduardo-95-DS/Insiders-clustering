@@ -12,23 +12,23 @@ Here's the output needed:
 
 - Report with answers to the following questions:
 
-- Who are eligible to participate in the Insiders program?
+  - Who are eligible to participate in the Insiders program?
 
-- How many customers will be part of the group?
+  - How many customers will be part of the group?
 
-- What are the main characteristics of these customers?
+  - What are the main characteristics of these customers?
 
-- What is the percentage of revenue contribution from Insiders?
+  - What is the percentage of revenue contribution from Insiders?
 
-- What is this group's billing expectation for the coming months?
+  - What is this group's billing expectation for the coming months?
 
-- What are the conditions for a person to be eligible for Insiders?
+  - What are the conditions for a person to be eligible for Insiders?
 
-- What are the conditions for a person to be removed from Insiders?
+  - What are the conditions for a person to be removed from Insiders?
 
-- What is the guarantee that the Insiders program is better than the rest of the base?
+  - What is the guarantee that the Insiders program is better than the rest of the base?
 
-- What actions can the marketing team take to increase revenue?
+  - What actions can the marketing team take to increase revenue?
 
 A dashboard gathering the most important infos about all the clients and the deployment to productionof a machine learning algorithm were also required. 
 
@@ -114,3 +114,19 @@ All three algorithms had a very similar silhouette score; looking at the silhoue
 
 ## - HC 
 ![Untitled3](https://github.com/Soturno95/Insiders-clustering/assets/95311171/47dc157f-fe53-4b00-aa03-e7b094a3a10a)
+
+# **7. Business results**
+
+## **7.1 Business questions**
+
+- Who are eligible to participate in the Insiders program?
+
+For the full list of people
+
+
+
+
+
+
+
+
