@@ -121,7 +121,22 @@ All three algorithms had a very similar silhouette score; looking at the silhoue
 
 - Who are eligible to participate in the Insiders program?
 
-For the full list of people
+For the full list of Insiders, see the insiders.csv or the dashboard.
+
+- How many customers will be part of the group?
+
+550
+
+- What are the main characteristics of these customers?
+ 
+Number of customers : 550, 9.66 % of all the customers
+Average revenue : $ 10,280.14
+Average recency : 44
+Average number of products purchased : 367
+Average purchase frequency : 0.21/day
+
+- What is the percentage of revenue contribution from Insiders?
+
 
 
 
