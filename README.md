@@ -139,6 +139,7 @@ Average purchase frequency : 0.21/day
 56.39%
 
 - What is this group's billing expectation for the coming months?
+For this questions
 
 - What are the conditions for a person to be eligible for Insiders?
 
