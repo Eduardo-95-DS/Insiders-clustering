@@ -136,9 +136,17 @@ Average number of products purchased : 367
 Average purchase frequency : 0.21/day
 
 - What is the percentage of revenue contribution from Insiders?
+56.39%
 
+- What is this group's billing expectation for the coming months?
 
+- What are the conditions for a person to be eligible for Insiders?
 
+- What are the conditions for a person to be removed from Insiders?
+
+- What is the guarantee that the Insiders program is better than the rest of the base?
+
+- What actions can the marketing team take to increase revenue?
 
 
 
