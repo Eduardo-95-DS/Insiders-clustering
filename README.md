@@ -89,27 +89,22 @@ Silhouette method/score and visualization were the metrics used.
 
 The K (n° of clusters) chosen was 10, which was a balanced number between a decent silhouette score and a manageable n° of clusters for the business/marketing teams.    
 Of the dimensonality reductors, UMAP was the most efficient, thus the only shown below.    
-
-Silhouette scores with only data preparation (standardization of features with Min Max Scaler):    
-**K-means -** 0.421276   
-**GMM -** -0.181430   
-**HC -** 0.374576   
+ 
 ![Untitled](https://github.com/Soturno95/Insiders-clustering/assets/95311171/04ddfa48-82c8-4d9f-830f-16c4924ce848)   
 
-Silhouette scores with data preparation (standardization of features with Min Max Scaler) and UMAP:   
-**K-means -** 0.513254   
-**GMM -** 0.465497   
-**HC -** 0.474117   
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/ea93be1b-581e-4007-824b-67e2e2f43fed)   
 
-Silhouette scores with the RFR embedding space and UMAP with tuned parameters:      
-**K-means -** 0.645201   
-**GMM -** 0.645221   
-**HC -** 0.645021    
 ![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)     
 
+Below is the silhouette score for all the three different testing.   
 
-All three algorithms had a very similar silhouette score; looking at the silhouette visualizations below (per cluster), the HC algorithm had a slight higher score in the Insiders cluster (the last silhouette from top top bottom), therefore it was the chosen algorithm.   
+|Models|data prep only| data prep + umap| RFR embedding + umap tuned|
+|---------|---------------------|--------------|--------|
+|**K-means**    |0.421276 |   0.513254  |  0.645201    |
+|**GMM**   |-0.181430 |  0.465497 | 0.645221 |
+|**HC**     |0.374576  |  0.474117| 0.645021 |
+
+All three algorithms had a very similar silhouette score; looking at the silhouette visualizations below (per cluster), the **HC algorithm** had a slight higher score in the Insiders cluster (the last silhouette from top to bottom), therefore it was the chosen algorithm.   
 
 ## - K-means
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/6f340531-4e65-42e0-8688-b75ad58e1702)
@@ -124,41 +119,43 @@ All three algorithms had a very similar silhouette score; looking at the silhoue
 
 ## **7.1 Business questions**
 
-- Who are eligible to participate in the Insiders program?   
+**- Who are eligible to participate in the Insiders program?**   
 
 For the full list of Insiders, see the insiders.csv or the dashboard.    
 
-- How many customers will be part of the group?    
+**- How many customers will be part of the group?**    
 
 550 (9.66% of the total)    
 
-- What are the main characteristics of these customers?    
+**- What are the main characteristics of these customers?**    
  
-  Number of customers : 550, 9.66 % of all the customers    
+  Number of customers : 550 (9.66 % of all the customers)    
   Average revenue : $ 10,280.14      
   Average recency : 44    
   Average number of products purchased : 367   
   Average purchase frequency : 0.21/day     
 
-- What is the percentage of revenue contribution from Insiders?
+**- What is the percentage of revenue contribution from Insiders?**
 
 56.39%
 
-- What is this group's billing expectation for the coming months?   
+**- What is this group's billing expectation for the coming months?**   
 
 For this question another machine learning project implementing time series algorithm it's gonna be needed.     
 
-- What are the conditions for a person to be eligible for Insiders?
+**- What are the conditions for a person to be eligible for Insiders?**
 
 Customers which get inside the confidence interval values of the current Insiders group for the features: gross revenue (between $7828 and $12732) and/or items (4547-7272) and/or products (305-429), are very likely to be eligible for the Insiders group. 
 
-- What are the conditions for a person to be removed from Insiders?
+**- What are the conditions for a person to be removed from Insiders?**
+  
 Current Insiders which are below the bottom range of the confidence interval of the above mentioned features are in risk of being realocated to another cluster in the next algorithm retraining during the production stage.
 
-- What is the guarantee that the Insiders program is better than the rest of the base?
-The Insiders program was created focusing on the gross revenue feature (which as the target variable of the random forest model), therefore customers in this group are the most lucrative for the company. 
+**- What is the guarantee that the Insiders program is better than the rest of the base?**
+  
+The Insiders program was created focusing on the gross revenue feature (which as the target variable of the random forest model), therefore customers in this group are the most lucrative for the company, contributing to 56.39 % of the total revenue.
 
-- What actions can the marketing team take to increase revenue?
+**- What actions can the marketing team take to increase revenue?**
 
 
 
