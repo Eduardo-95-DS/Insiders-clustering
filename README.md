@@ -34,13 +34,18 @@ A dashboard gathering the most important infos about all the clients and the dep
 
 # **2. Business assumptions**
 - Products with prices below 0.04 were deemed unimportant to the revenue analysis , thus removed.
+  
 - Only quantities  of products above 0 were considered useful.
+  
 - Stock codes with words and letters were considered potentially troublesome for the clustering analysis, thus removed.
+  
 - The feature 'description' was removed because the names of the products aren't important.
+  
 - In the 'country' feature, 'european community' and 'unspecified' were considered potentially troublesome for the clustering analysis, thus removed.
+  
 - Customers '12346', '16446' ,'21497, '21498' and '21499' were deemed as 'bad users' and thus removed since some of the features associated with them probably contained insertion errors and/or informations that didn't make since due to the yearly nature of the dataset. 
 
-This filtering only removed 0.01% of the total dataset, which contained 541909 rows of a yearly sample, ranging from 29-11-2016 to 07-12-2017.
+The filtering only removed 0.01% of the total dataset, which contained 541909 rows of a yearly sample, ranging from 29-11-2016 to 07-12-2017.
 
 # **3. Solution strategy**
 
@@ -145,11 +150,16 @@ For this question another machine learning project implementing time series algo
 
 - What are the conditions for a person to be eligible for Insiders?
 
+Customers which get inside the confidence interval values of the current Insiders group for the features: gross revenue (between $7828 and $12732) and/or items (4547-7272) and/or products (305-429), are very likely to be eligible for the Insiders group. 
+
 - What are the conditions for a person to be removed from Insiders?
+Current Insiders which are below the bottom range of the confidence interval of the above mentioned features are in risk of being realocated to another cluster in the next algorithm retraining during the production stage.
 
 - What is the guarantee that the Insiders program is better than the rest of the base?
+The Insiders program was created focusing on the gross revenue feature (which as the target variable of the random forest model), therefore customers in this group are the most lucrative for the company. 
 
 - What actions can the marketing team take to increase revenue?
+
 
 
 
