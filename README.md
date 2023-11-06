@@ -160,8 +160,8 @@ Current Insiders which are below the bottom range of the confidence interval of 
   
 The Insiders program was created focusing on the gross revenue feature (which as the target variable of the random forest model), therefore customers in this group are the most lucrative for the company, contributing to 56.39 % of the total revenue.
 
-**- What actions can the marketing team take to increase revenue?**
-
+**- What actions can the marketing team take to increase revenue?**   
+Discounts, choice preferences and offering exclusive products.
 
 
 
