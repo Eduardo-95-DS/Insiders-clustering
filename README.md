@@ -81,22 +81,27 @@ The filtering only removed 0.01% of the total dataset, which contained 541909 ro
 
 The algorithms used were Random forest regressor (RFR), K-means, Gaussian mixture model (GMM) and Hierarchical clustering (HC). Random forest regressor was used to create a embedding space, in which the dataset was more organized in a higher dimensionality space, allowing the clusterization algorithms (k-means, gmm and hc) to perform better.
 
-On top of that, dimensionality reductor algorithms such as UMAP, t-SNE and PCA were used after data preparation and after the RFR (in the embedding space) (before the  algorithms) in order to further improve performance.
+On top of that, dimensionality reductor algorithms such as UMAP, t-SNE and PCA were used after data preparation and after the RFR (in the embedding space and before the clusterization algorithms) in order to further improve performance.
 
-Silhouette method/score and visualization were the metrics used.
+Silhouette visualization and score were the metrics used.
 
 # **6. Machine learning model performance**
 
+Below are the silhouette visualizations for the three main tests with a K (n° of clusters) ranging from 2 to 10.    
+
+- **data prep only**
+![Untitled](https://github.com/Soturno95/Insiders-clustering/assets/95311171/073239d0-14c0-40ad-88f4-02f11fdac42b)   
+
+- **data prep + umap**
+![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/8da5143e-8804-4bc3-97c7-3956e87a1d9b)   
+
+- **RFR embedding + umap tuned**   
+![Untitled3](https://github.com/Soturno95/Insiders-clustering/assets/95311171/ec0e9009-54e9-4bde-bac5-d54357bba91e)    
+
 The K (n° of clusters) chosen was 10, which was a balanced number between a decent silhouette score and a manageable n° of clusters for the business/marketing teams.    
-Of the dimensonality reductors, UMAP was the most efficient, thus the only shown below.    
- 
-![Untitled](https://github.com/Soturno95/Insiders-clustering/assets/95311171/04ddfa48-82c8-4d9f-830f-16c4924ce848)   
+Of the dimensonality reductors, UMAP was the most efficient, thus the only shown above.    
 
-![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/ea93be1b-581e-4007-824b-67e2e2f43fed)   
-
-![Untitled2](https://github.com/Soturno95/Insiders-clustering/assets/95311171/0699b854-c55e-4a95-946a-35e7bf268b8a)     
-
-Below is the silhouette score for all the three different testing.   
+Below are the silhouette scores for a K of 10, for all the three different testing.    
 
 |Models|data prep only| data prep + umap| RFR embedding + umap tuned|
 |---------|---------------------|--------------|--------|
@@ -104,7 +109,7 @@ Below is the silhouette score for all the three different testing.
 |**GMM**   |-0.181430 |  0.465497 | 0.645221 |
 |**HC**     |0.374576  |  0.474117| 0.645021 |
 
-All three algorithms had a very similar silhouette score; looking at the silhouette visualizations below (per cluster), the **HC algorithm** had a slight higher score in the Insiders cluster (the last silhouette from top to bottom), therefore it was the chosen algorithm.   
+All three algorithms had a very similar silhouette score; looking at the silhouette plots below (per cluster), the **HC algorithm** had a slight higher score in the Insiders cluster (the last silhouette from top to bottom), therefore it was the chosen algorithm.   
 
 ## - K-means
 ![Untitled1](https://github.com/Soturno95/Insiders-clustering/assets/95311171/6f340531-4e65-42e0-8688-b75ad58e1702)
